@@ -13,8 +13,9 @@ body {
 
 nav {
   background: #195276;
-  opacity:40%; 
+  opacity: 70%; 
   position: relative;
+ 
 }
 
 label.logo {
@@ -42,6 +43,9 @@ nav ul li a {
   font-size: 17px;
   text-transform: uppercase;
 }
+nav ul li a:hover {
+  color: blue;
+}
 
 /* Responsive Navigation Menu */
 input#menu-toggle {
@@ -55,23 +59,27 @@ label.menu-icon {
   line-height: 80px;
   padding: 0 20px;
   cursor: pointer;
+  z-index: 10;
 }
 
 @media (max-width: 768px) {
   nav ul {
     display: none;
     flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
     text-align: center;
     background: #195276;
     position: absolute;
     top: 80px;
     right: 0;
     width: 100%;
+    height: 100vh; /* Full screen height for the menu */
   }
 
   nav ul li {
     display: block;
-    margin: 10px 0;
+    margin: 15px 0; /* Add some space between items */
   }
 
   label.menu-icon {
@@ -79,6 +87,13 @@ label.menu-icon {
   }
 
   input#menu-toggle:checked ~ ul {
-    display: flex;
+    display: flex; /* Show the menu */
+  }
+
+  input#menu-toggle:checked ~ label.menu-icon {
+    position: fixed; /* Keep the icon fixed */
+    top: 10px;
+    right: 20px;
+    z-index: 11;
   }
 }
