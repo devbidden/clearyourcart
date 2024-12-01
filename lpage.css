@@ -100,7 +100,7 @@ label.menu-icon {
     top: 43px; /* Adjust for fixed height */
     right: 0;
     width: 50%;
-    height: 60vh;
+    height: 50vh;
   }
 
   input#menu-toggle:checked ~ ul {
