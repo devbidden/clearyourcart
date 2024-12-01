@@ -1,5 +1,5 @@
 let i = 0;
-const txt = "Don't worry, we dey for you..."; 
+const txt = "Don't worry, we dey for you"; 
 const speed = 70; // Adjust typing speed in milliseconds
 
 function typeWriter() {
