@@ -114,12 +114,7 @@ label.menu-icon {
     right: 20px;
     z-index: 11;
   }
-   .cant, .for,.items{
-    font-size: 10px;  
-     } 
- .pay{
-     font-size: 10px;    
-    }
+
 }
 
 .login{
@@ -184,3 +179,6 @@ text-align: center;
   font-size: 14px;
   background-color: #195276;
 }
+
+
+
