@@ -149,4 +149,15 @@ label.menu-icon {
     color: #333;    
     margin-left: 30px;
 }
+.fillform
+{
+font-family:"Trispace", sans-serif;
+margin-left: 10px;
+
+}
+#productname, #price, #qty
+{
+  line-height: 2em;
+  width:30em;
+}
 
