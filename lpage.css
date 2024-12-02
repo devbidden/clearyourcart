@@ -100,7 +100,7 @@ label.menu-icon {
     font-size: 20px;
     font-family: "Trispace", sans-serif;
     color: #333;    
-    margin-left: 30px;
+    padding: 0 20px;
 }
 .clear{
   text-align: center;
@@ -144,15 +144,13 @@ text-decoration-color: #195276;
   
 .cant,.pay,.for,.items{
   font-size: 25px; 
-  line-height: normal; 
-  padding: 10px 0; 
+  line-height: normal;   
 }
 #wedey{
-  font-size: 15px; 
+  font-size: 15px;  
 }
 .clear{
-  font-size: 20px;
-}
+  font-size: 20px;}
 #productname
 {
   line-height: 1em;
