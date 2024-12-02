@@ -144,10 +144,12 @@ text-decoration-color: #195276;
   
 .cant,.pay,.for,.items{
   font-size: 25px; 
-  line-height: normal;   
+  line-height: normal;  
+  padding: 10px 0; /* Adjust padding for better alignment */ 
 }
 #wedey{
   font-size: 15px;  
+  padding: 10px 0; /* Adjust padding for better alignment */
 }
 .clear{
   font-size: 20px;}
