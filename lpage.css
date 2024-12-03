@@ -191,6 +191,122 @@ text-align: center;
   color: #ffffff;
   border-color: #3b7dd8;
 }
+  /* styles.css */
+
+.reviews-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.reviews-container {
+  display: grid;
+  gap: 20px;
+}
+
+.review-card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.customer-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.customer-info h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.customer-info .review-date {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.review-text {
+  font-style: italic;
+  margin: 10px 0;
+  font-size:20px;
+}
+
+.review-rating {
+  font-size: 0.9rem;
+  color: #f39c12; /* Gold color for stars */
+}
+
+.footer {
+  background-color:#5a92b4;
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
+  border-top: 3px solid gainsboro; /* Accent color */
+}
+
+.contactinfo {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #195276;; /* Gold accent color */
+}
+
+.contactinfodeet {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.contactinfodeet br {
+  margin-bottom: 5px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.follow-us {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #195276;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #f39c12; /* Gold color on hover */
+}
+
 
 @media (max-width: 768px) {  
 .cant,.for,.items{
