@@ -258,45 +258,44 @@ text-align: center;
 }
 
 .footer {
-  background-color:#5a92b4;
+  background-color: #5a92b4;
   color: white;
-  text-align: center;
-  padding: 20px 15px;
+  padding: 10px 15px; /* Reduced padding for shorter height */
   border-top: 3px solid gainsboro; /* Accent color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contactinfo {
-  display: block;
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+}
+
+.contact-header {
   font-weight: bold;
   font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #195276;; /* Gold accent color */
-}
-
-.contactinfodeet {
-  display: block;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: white;
-}
-
-.contactinfodeet br {
   margin-bottom: 5px;
+  color: #195276; /* Accent color */
+}
+
+.contact-details {
+  line-height: 1.5;
 }
 
 .social-media {
-  margin-top: 20px;
+  text-align: right;
 }
 
 .follow-us {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: #195276;
+   color: #195276;
 }
 
 .social-icon {
-  margin: 0 10px;
+  margin: 0 5px; /* Adjusted spacing for icons */
   font-size: 1.5rem;
   color: #fff;
   text-decoration: none;
@@ -304,7 +303,7 @@ text-align: center;
 }
 
 .social-icon:hover {
-  color: #f39c12; /* Gold color on hover */
+  color: #195276;
 }
 
 
@@ -447,55 +446,12 @@ text-align: top;
   .review-rating {
     font-size: 0.8rem;
   }
-  
-  .footer {
-    background-color:#5a92b4;
-    color: white;
-    text-align: center;
-    padding: 20px 15px;
-    border-top: 3px solid gainsboro; /* Accent color */
-     }
-  
-  .contactinfo {
-    display: block;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #195276;; /* Gold accent color */
+  .contact-header,.social-icon
+  {
+font-size: 20px;    
+  }  
+  .contact-details{
+    font-size: 12px;
   }
-  
-  .contactinfodeet {
-    display: block;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: white;
-  }
-  
-  .contactinfodeet br {
-    margin-bottom: 5px;
-  }
-  
-  .social-media {
-    margin-top: 20px;
-  }
-  
-  .follow-us {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #195276;
-  }
-  
-  .social-icon {
-    margin: 0 10px;
-    font-size: 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    color: #f39c12; /* Gold color on hover */
-  }
-  
+ 
 }
