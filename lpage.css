@@ -53,7 +53,6 @@ nav ul li a:hover {
   color: white;
 }
 
-/* Responsive Navigation Menu */
 input#menu-toggle {
   display: none;
 }
@@ -68,7 +67,6 @@ label.menu-icon {
   z-index: 10;
 }
 
-
 .login{
   color: white;
   opacity:100%;
@@ -80,7 +78,8 @@ label.menu-icon {
   background-color: #195276;
 }
 .login:hover, .add:hover{
-  background: gray;
+  background-color: #3b7dd8; /* Slightly brighter blue */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
 }
 .cant, .for,.items{
    font-size: 40px;
@@ -88,13 +87,11 @@ label.menu-icon {
    font-weight: light; 
    padding: 0 20px;
    padding-top: 50px;
-     }
-
+  }
 .pay{
     font-size: 40px;
     font-family: "Trispace", sans-serif;
-    font-weight: bolder; 
-    margin-left:10px;
+    font-weight: bolder;   
    }
 #wedey {
     font-size: 20px;
@@ -113,55 +110,82 @@ label.menu-icon {
 {
 font-family:"Trispace", sans-serif;
 text-align: center;
-text-decoration-color: #195276;
+
 }
-#productname
-{
-  line-height: 2em;
-  width:20em;
-}
-#qty
-{
-  line-height: 2em;
-  width:5em;
+/* Input Fields */
+#productname,
+#qty {
+  line-height: 2.5em;
+  width: 25em; /* Default width for productname */
+  padding: 0 10px; /* Adds padding for better readability */
+  border: 1px solid #195276;
+  background-color: #f8f9fa; /* Light gray for better contrast */
+  border-radius: 8px; /* Smooth corners */
+  font-size: 16px; /* Professional font size */
+  color: #333; /* Darker text color for readability */
+  transition: all 0.3s ease; /* Smooth animations for hover/focus */
 }
 
-.add{
+/* Adjust the width for Quantity */
+#qty {
+  width: 6em;
+}
+
+/* Hover/Focus Effects for Inputs */
+#productname:focus,
+#qty:focus {
+  outline: none; /* Removes default blue outline */
+  border-color: #3b7dd8; /* Highlight color */
+  background-color: #fff; /* Slightly brighter background */
+  box-shadow: 0 0 5px rgba(59, 125, 216, 0.5); /* Glow effect */
+}
+
+/* Button Styling */
+.add {
   margin-left: 10px;
   color: white;
-  opacity:100%;
   height: 2.5em;
-  width: 75px;
-  border-radius: 10%;
-  border-style: none;
-  font-size: 14px;
-  background-color: #195276;
+  width: 75px; /* Slightly wider for better appearance */
+  border-radius: 8px; /* Fully rounded corners */
+  border: none; /* Removes border */
+  font-size: 16px; /* Professional font size */
+  background-color: #195276; /* Primary button color */
+  cursor: pointer; /* Pointer cursor for interaction */
+  transition: all 0.3s ease; /* Smooth hover transition */
 }
 
 
+/* Active State for Button */
+.add:active {
+  transform: scale(0.98); /* Subtle button press effect */
+  box-shadow: none; /* Removes shadow when clicked */
+}
 
-@media (max-width: 768px) {
-  
-.cant,.pay,.for,.items{
+@media (max-width: 768px) {  
+.cant,.for,.items{
   font-size: 25px; 
   line-height: normal;  
-  padding: 10px 0; /* Adjust padding for better alignment */ 
+  padding: 10px 10px; 
+}
+.pay{
+  font-size: 25px; 
+  line-height: normal;
 }
 #wedey{
   font-size: 15px;  
-  padding: 10px 0; /* Adjust padding for better alignment */
+  padding: 10px 10px; 
 }
 .clear{
   font-size: 20px;}
 #productname
 {
-  line-height: 1em;
+  line-height: 2em;
   width:10em;
   font-size: 15px; 
 }
 #qty
 {
-  line-height: 1em;
+  line-height: 2em;
   width:5em;
   font-size: 15px; 
 }
@@ -172,8 +196,8 @@ text-align: top;
 }
 .add{
   font-size: 15px; 
-  height: 1.6em;
-  width:10%;
+  height: 2.6em;
+  width:4em;
 }
  nav {
    display: flex;
@@ -207,12 +231,12 @@ text-align: top;
    top: 43px; /* Adjust for fixed height */
    right: 0;
    width: 50%;
-   height: 50vh;
+   height: 55vh;
  }
 
  input#menu-toggle:checked ~ ul {
-   display: flex; /* Show the menu */
- }
+   display: flex;  
+  }
 
  input#menu-toggle:checked ~ label.menu-icon {
    position: fixed;
