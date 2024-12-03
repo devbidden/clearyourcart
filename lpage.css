@@ -194,16 +194,16 @@ text-align: center;
 
 @media (max-width: 768px) {  
 .cant,.for,.items{
-  font-size: 25px; 
+  font-size: 35px; 
   line-height: normal;  
   padding: 10px 10px; 
 }
 .pay{
-  font-size: 25px; 
+  font-size: 35px; 
   line-height: normal;
 }
 #wedey{
-  font-size: 15px;  
+  font-size: 20px;  
   padding: 10px 10px; 
 }
 .clear{
