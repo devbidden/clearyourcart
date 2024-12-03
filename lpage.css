@@ -112,7 +112,6 @@ font-family:"Trispace", sans-serif;
 text-align: center;
 
 }
-/* Input Fields */
 #productname,
 #qty {
   line-height: 2.5em;
@@ -130,7 +129,6 @@ text-align: center;
 #qty {
   width: 6em;
 }
-
 /* Hover/Focus Effects for Inputs */
 #productname:focus,
 #qty:focus {
@@ -159,6 +157,39 @@ text-align: center;
 .add:active {
   transform: scale(0.98); /* Subtle button press effect */
   box-shadow: none; /* Removes shadow when clicked */
+}
+.steps{
+  color:#333; 
+}
+.container {
+  display: flex;
+  justify-content: center; /* Center the boxes horizontally within the container */
+  gap: 20px; /* Add space between the boxes */
+}
+
+.custom-box,.custom-box1,.custom-box2 {
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #195276;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333333;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+   }
+
+.custom-box p ,.custom-box1 p,.custom-box2 p{
+  margin: 0;
+}
+
+/* Customize colors here */
+.custom-box:hover,.custom-box1:hover,.custom-box2:hover {
+  background-color:  #3b7dd8;
+  color: #ffffff;
+  border-color: #3b7dd8;
 }
 
 @media (max-width: 768px) {  
@@ -244,5 +275,22 @@ text-align: top;
    right: 20px;
    z-index: 11;
  }
+
+ .container {
+  display: flex;
+  flex-direction: column; /* Arrange the boxes in a vertical column */
+  align-items: center; /* Center the boxes horizontally within the container */
+  gap: 20px; /* Add space between the boxes */
+}
+.custom-box,.custom-box1,.custom-box2 {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  color: #333333;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+   }
 
 }
