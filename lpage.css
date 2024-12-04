@@ -268,14 +268,14 @@ text-align: center;
 }
 
 .contactinfo {
-  font-size: 1rem;
+  font-size: 0.6rem;
   color: white;
   text-align: left;
 }
 
 .contact-header {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   margin-bottom: 5px;
   color: #195276; /* Accent color */
 }
@@ -289,14 +289,14 @@ text-align: center;
 }
 
 .follow-us {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: bold;
    color: #195276;
 }
 
 .social-icon {
   margin: 0 5px; /* Adjusted spacing for icons */
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -305,52 +305,55 @@ text-align: center;
 .social-icon:hover {
   color: #195276;
 }
-
+/* Slider */
 .slider-container {
   width: 80%;
   max-width: 400px;
   overflow: hidden;
-  position: absolute; /* Makes positioning relative to the nearest positioned ancestor */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centers the container */
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh; 
-  border-radius: 10%;
+  margin: auto;
 }
-
 
 .slider {
   display: flex;
-  gap: 20px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
 }
 
 .slide {
-  flex: 0 0 33.33%; /* 3 items visible at a time */
+  flex: 0 0 33.33%;
   text-align: center;
-  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .slide img {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .slide.active img {
-  transform: scale(1.2); /* Highlight active slide */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 
 .slide.dimmed img {
-  opacity: 0.5; /* Dim non-active slides */
+  opacity: 0.5;
 }
+.pshop {
+  display: flex; /* Make the parent a flex container */
+  justify-content: center; /* Center child horizontally */
+}
+
+.shop {
+  color: #333;
+  text-align: center;
+}
+.shope{
+  font-size: 30px;
+}
+
+
 @media (max-width: 768px) {  
 .cant,.for,.items{
   font-size: 35px; 
@@ -490,28 +493,16 @@ text-align: top;
   .review-rating {
     font-size: 0.8rem;
   }
-  .contact-header,.social-icon
-  {
-font-size: 20px;    
-  }  
-  .contact-details{
-    font-size: 12px;
-  }
+  
   .slider-container {
     width: 50%;
-    max-width: 400px;
-    overflow: hidden;
-    position: absolute; /* Makes positioning relative to the nearest positioned ancestor */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centers the container */
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25vh; 
-    border-radius: 10%;
+ 
+  }
+  .shop{
+font-size: 0.8rem;
+
+  }
+  .shope{
+    font-size: 1.2rem;
   }
 }
