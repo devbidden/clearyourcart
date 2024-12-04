@@ -42,4 +42,4 @@ const autoSlide = () => {
 
 // Initialize the slider
 updateSlider();
-setInterval(autoSlide, 2000); // Change slide every 3 seconds
+setInterval(autoSlide, 1500); // Change slide every 3 seconds
