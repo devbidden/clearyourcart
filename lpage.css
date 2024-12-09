@@ -258,13 +258,8 @@ text-align: center;
 }
 
 .footer {
-  background-color: gray;
-  color: white;
-  padding: 10px 15px; /* Reduced padding for shorter height */
-  border-top: 3px solid gainsboro; /* Accent color */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #020522;
+  display: flex;  
 }
 
 .contactinfo {
@@ -277,26 +272,24 @@ text-align: center;
   font-weight: bold;
   font-size: 0.8rem;
   margin-bottom: 5px;
-  color: #195276; /* Accent color */
+  color: #195276; 
 }
 
 .contact-details {
   line-height: 1.5;
 }
 
-.social-media {
-  text-align: right;
-}
 
 .follow-us {
-  font-size: 0.8rem;
+  font-size: 2rem;
   font-weight: bold;
-   color: #195276;
+  color: white;
+  margin:10px;
 }
 
 .social-icon {
-  margin: 0 5px; /* Adjusted spacing for icons */
-  font-size: 1rem;
+  margin: 0 5px; 
+  font-size: 1.5rem;
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -425,8 +418,9 @@ text-align: top;
    position: absolute;
    top: 43px; 
    right: 0;
-   width: 20%;
-   height: 50vh;
+   width: 100%;
+   height: 55vh;
+   z-index: 2;
  }
 
  input#menu-toggle:checked ~ ul {
@@ -437,9 +431,8 @@ text-align: top;
    position: fixed;
    top: 10px;
    right: 20px;
-   z-index: 11;
+   z-index: 1;
  }
-
  .container {
   display: flex;
   flex-direction: column; /* Arrange the boxes in a vertical column */
@@ -506,5 +499,16 @@ font-size: 0.8rem;
   }
   .shope{
     font-size: 1.5rem;
+  }
+  .follow-us {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin:10px;
+  }
+  .social-icon {
+
+    font-size: 1.0rem;
+   
   }
 }
